@@ -27,6 +27,7 @@ br,
 ul,
 .link,
 .nav ul,
+.dot-div,
 .nav ul li a{
     user-select: none;
     -moz-user-select: none;
@@ -67,7 +68,7 @@ ul,
 
 .desc-wrapper{
     width: 100%;
-    min-width: 500px;
+    min-height: 250px;
 }
 
 .desc{
@@ -129,8 +130,57 @@ ul,
     /* text-decoration: underline; */
 }
 
-.tag-line{
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    min-height: 280px;
+}
+
+/* Caption text */
+.text {
     text-align: center;
-    font-size: 100px;
+    font-size: 46px;
     font-style: italic;
+    width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #B8C7D6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #9876AA;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    height: 100px;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
 }
