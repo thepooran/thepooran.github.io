@@ -100,6 +100,7 @@ ul,
     text-align: justify;
 }
 
+.p-four a,
 .desc a{
     /* text-decoration: none; */
     /* color: #9876AA; */
@@ -137,6 +138,25 @@ ul,
     text-align: right;
     font-weight: 500;
     font-size: 18px;
+}
+.p-four-wrapper{
+    width: 100%;
+    min-height: 240px;
+}
+
+.p-four{
+    width: 86%;
+    margin: auto;
+    text-align: center;
+}
+
+.p-four-i{
+    font-size: 18px;
+    font-style: normal;
+}
+
+.p-four-title{
+    font-size: 50px;
 }
 
 .title-text{
