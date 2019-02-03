@@ -82,7 +82,7 @@ ul,
 
 .desc-wrapper{
     width: 100%;
-    min-height: 320px;
+    min-height: 300px;
 }
 
 .desc{
@@ -169,7 +169,7 @@ ul,
     max-width: 1000px;
     position: relative;
     margin: auto;
-    min-height: 280px;
+    min-height: 300px;
 }
 
 /* Caption text */
