@@ -10,9 +10,11 @@ p::selection,
 h1::selection,
 h2::selection,
 h3::selection,
+h4::selection,
 div::selection,
 img::selection,
-br::selection,
+li::selection,
+a img::selection,
 b::selection,
 i::selection,
 u::selection,
@@ -21,28 +23,51 @@ a::selection{
     color: #2B2B2B;
 }
 
-.title-wrapper{
+br,
+ul,
+.link,
+.nav ul,
+.nav ul li a{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+.nav-wrapper{
     width: 100%;
     height: 100px;
 }
 
-.title-div{
-    width: 86%;
+.nav-wrapper{
+    width: 100%;
     height: 100px;
-    margin: auto;
     margin-top: 80px;
 }
 
-.title-div b{
-    text-decoration: none;
-    color: #9876AA;
-    font-weight: 500;
+.nav{
+    width: 86%;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    border: solid #B8C7D655;
+    border-width: 0px 0px 1px 0px;
 }
 
-.title-div a{
-    color: #B8C7D6;
-    text-decoration: none;
-    font-size: 80px;
+.nav ul{
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav ul li{
+    display: inline-block;
+}
+
+.nav ul li a{
+    /* text-decoration: none; */
+    color: #9876AA;
+    margin: 0px 10px;
 }
 
 .desc-wrapper{
@@ -52,7 +77,7 @@ a::selection{
 .desc{
     width: 86%;
     margin: auto;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .desc .title{
@@ -65,13 +90,15 @@ a::selection{
 }
 
 .desc a{
-    text-decoration: none;
-    color: #9876AA;
+    /* text-decoration: none; */
+    /* color: #9876AA; */
+    color: #B8C7D6;
+    /* text-transform: uppercase; */
 }
 
 .link-wrapper{
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 80px;
 }
 
@@ -88,9 +115,20 @@ a::selection{
     text-decoration: none;
     line-height: 2px;
     color: #B8C7D6;
-    padding:0px 10px;
+    margin: 0px 10px;
 }
 
 .filter-green{
-    filter: invert(50%) sepia(14%) saturate(1011%) hue-rotate(235deg) brightness(99%) contrast(88%);
+    filter: invert(54%) sepia(15%) saturate(893%) hue-rotate(235deg) brightness(91%) contrast(93%);
+}
+
+.right-most{
+    text-align: right;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title-text{
+    color: #9876AA;
+    /* text-decoration: underline; */
 }
