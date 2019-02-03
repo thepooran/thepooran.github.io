@@ -67,6 +67,7 @@ ul,
 
 .desc-wrapper{
     width: 100%;
+    min-width: 500px;
 }
 
 .desc{
@@ -126,4 +127,9 @@ ul,
 .title-text{
     color: #9876AA;
     /* text-decoration: underline; */
+}
+
+.tag-line{
+    text-align: center;
+    font-size: 100px;
 }
