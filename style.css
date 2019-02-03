@@ -148,6 +148,7 @@ ul,
     width: 86%;
     margin: auto;
     text-align: center;
+    min-height: 250px;
 }
 
 .p-four-i{
