@@ -82,12 +82,12 @@ ul,
 
 .desc-wrapper{
     width: 100%;
-    min-height: 300px;
 }
 
 .desc{
     width: 86%;
     margin: auto;
+    min-height: 300px;
     /* margin-top: 80px; */
 }
 
@@ -157,6 +157,16 @@ ul,
 
 .p-four-title{
     font-size: 50px;
+}
+
+.four{
+    width: 100%;
+    min-height: 180px;
+    text-align: center;
+}
+
+.four-title{
+    font-size: 90px;
 }
 
 .title-text{
